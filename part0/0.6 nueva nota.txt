@@ -1,0 +1,13 @@
+title Diagrama de secuencia usuario crea nueva nota
+
+Browser->Server: HTTP POST Request https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser: Response status 302
+note right of Server: Responde status
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML status 200
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main CSS status 200
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main JS status 200
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: data JSON status 200
